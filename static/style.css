@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&family=Tagesschrift&display=swap');
+body {
+    background-color: rgb(220, 238, 255);
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.preloader {
+    background: #fff url(images/preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /* background-size: 5%; */
+}
+
+header {
+    padding-top: 30px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.logo-text {
+    font-size: 5rem;
+}
+
+.score-board h3 {
+    color: #774029;
+}
+
+.score-board span {
+    color: #000;
+}
+
+.man img {
+    max-height: 300px;
+}
+
+.attempt {
+    display: none;
+}
+
+.word {
+    padding-top: 40px;
+    display: none;
+}
+
+.word h2 {
+    font-size: 2.5rem;
+}
+
+.word h2{
+    color: #774029;
+}
+
+.var_word {
+    color: #000;
+}
+
+.play-btn {
+    padding: 20px 0;
+}
+
+.btn-success, .btn-warning {
+    padding: 10px 40px;
+}
+
+.btn-success:hover {
+    color: #F29711;
+}
+
+.btn-warning {
+    display: none;
+}
+
+.btn-warning:hover {
+    color: #000;
+}
+
+.win span{
+    color: limegreen;
+}
+
+.loose span {
+    color: tomato;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+    background-color: #F29711;
+    font-weight: 700;
+}
+
+footer span {
+    color: #774029;
+}

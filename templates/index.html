@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang ♠ Man</title>
+    <link
+      rel="icon"
+      type="image/icon"
+      href="../static/images/hang-man-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+
+  <body>
+    
+    <div class="preloader"></div>
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <img class="logo img-fluid" src="../static/images/hang-man-logo.png" alt="hang-man-logo"/>
+            <h1 class="logo-text text-center">Hang Man</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="score-board">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-right">
+            <h3 class="high_score">High Score: <span>{{high_score}}</span></h3>
+            <h3 class="score">Score: <span>{{score}}</span></h3>
+            <h3 class="attempt text-right">Attempt: <span>{{lives}}</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hang-man">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <div class="man">
+              <img class="img-fluid" src="../static/images/hang-man-{{lives}}.png" alt="hang-man"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="word-guess">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 d-flex justify-content-center align-items-center"
+          >
+            <div class="word">
+              <h2><span>Guess the Word:</span> <span class="var_word">{{current_display}}</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-wrong"><p></p></div> 
+    </section>
+    <section>
+      <div class="win_loose">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="win"><h3><span>Correct: </span>{{correct_word}}</h3></div>
+              <div class="loose"><h3><span>Game Over ! </span>The word was: {{correct_word}}</h3></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="play">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center align-items-center">
+            <div class="play-btn">
+                <button type="button" class="play btn btn-success btn-lg">Play</button>
+                <button type="button" class="play_again btn btn-warning btn-lg">Play Again ↺</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="text-center">&copy; 2025. Made with <span>♠ by Rahat.</span></p>
+    </footer>
+
+    <script src="../static/index.js"></script>
+ 
+ 
+  </body>
+</html>
